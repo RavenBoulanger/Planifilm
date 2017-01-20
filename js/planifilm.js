@@ -150,7 +150,7 @@ window.onload = function () {
 		var imageBulle = bullesTemp
 			//					.append("g").attr("class", "bulleImg")
 			.append("image")
-			.attr("xlink:href", "../img/bulle.svg")
+			.attr("xlink:href", "img/bulle.svg")
 			.attr("width", 0).attr("height", 0)
 			.attr("x", function (d) {
 				d.x;
