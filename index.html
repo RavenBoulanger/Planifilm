@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="planifilm">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Planifilm Etape 2</title>
+
+	<!-- Bootstrap -->
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+	<!-- main css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:500,700" rel="stylesheet">
+
+	<!-- <link href="css/style.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="css/mainscss.css">
+	<style>
+
+	</style>
+	<!-- modernizr -->
+	<!-- <script src="js/modernizr.js"></script> -->
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body ng-controller="mainController">
+
+
+	<!-- box header -->
+	<header class="navbar headernav  navbar-fixed-top">
+		<article class="box-header ">
+			<div class="box-logo">
+				<a href="#"><img src="img/logo.png" style="width:50px; height:auto;" alt="Logo"></a>
+			</div>
+			<!-- box-nav -->
+			<a class="box-primary-nav-trigger" href="#0">
+				<span class="box-menu-icon"></span>
+			</a>
+			<!-- box-primary-nav-trigger -->
+
+			<!-- end box header -->
+		</article>
+	</header>
+	<!-- nav -->
+
+	<nav>
+		<ul class="box-primary-nav">
+			<li><a class="actif" href="#">Trouver un film</a></li>
+			<li><a href="#">Visionnements en cours</a></li>
+			<li><a href="#">Deconnexion</a></li>
+			<li><a href="#">Visionnements en cours</a></li>
+			<li><a href="#">Deconnexion</a></li>
+		</ul>
+	</nav>
+	<!-- end nav -->
+
+	<div id="main" class="container-fluid">
+		<div class="row">
+			<!-- angular templating -->
+			<!-- this is where content will be injected -->
+			<div ng-view></div>
+
+		</div>
+
+
+	</div>
+	<!-- box-intro -->
+	<div class="container-fluid etape2">
+		<div class="row">
+			<!-- <figure>
+              <img src="../img/diving-suit.svg" alt="" />
+            <figcaption>
+
+            <p>Diving suit</p>
+            </figcaption>
+
+            </figure> -->
+
+
+			<section id="data-figure">
+
+
+
+			</section>
+			<footer class="main_footer">
+				<nav class="navbar navbar-inverse navbar-fixed-bottom">
+					<div class="container-fluid">
+
+
+						<div class="btn-group btn-group-justified" role="group">
+							<div class="btn-group" role="group">
+								<button type="button" id="all" class="btn btn-default filter active">
+									<span class="hidden-sm hidden-xs">All</span>
+									<i class="fa fa-rebel" aria-hidden="true"></i>
+
+
+								</button>
+							</div>
+							<div class="btn-group" role="group">
+								<button type="button" id="fantasy" class="btn btn-default filter inactive">
+									<span class="hidden-sm hidden-xs">fantasy</span>
+									<i class="fa fa-bolt" aria-hidden="true"></i>
+								</button>
+
+
+
+							</div>
+							<div class="btn-group" role="group">
+								<button type="button" id="science-fiction" class=" filter inactive btn btn-default">
+									<span class="hidden-sm hidden-xs">science-fiction </span>
+									<i class="fa fa-hand-spock-o" aria-hidden="true"></i>
+								</button>
+
+							</div>
+							<div class="btn-group" role="group">
+								<button type="button" id="animation" class="btn btn-default filter inactive">
+									<span class="hidden-sm hidden-xs">animation</span>
+									<i class="fa fa-empire" aria-hidden="true"></i></a>
+								</button>
+							</div>
+							<div class="btn-group" role="group">
+								<button type="button" id="documentaire" class="btn btn-default filter inactive">
+									<span class="hidden-sm hidden-xs">documentaire</span>
+									<i class="fa fa-lightbulb-o " aria-hidden="true"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+
+
+
+				</nav>
+
+			</footer>
+		</div>
+	</div>
+
+
+
+
+	</button>
+	</div>
+
+
+
+	<!-- /.container-fluid -->
+	</nav>
+
+	</footer>
+
+
+	<!-- jQuery -->
+	<!-- <script src="js/jquery-2.1.1.js"></script> -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+	<!--  plugins -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/menu.js"></script>
+
+	<!-- <script src="js/router.js"></script> -->
+	<!--  D3.js-->
+
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<!--  custom script -->
+	<script src="js/planifilm.js"></script>
+
+</body>
+
+</html>

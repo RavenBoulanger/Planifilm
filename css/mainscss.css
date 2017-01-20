@@ -1,0 +1,1276 @@
+/*
+* Box Theme
+* Created by : Ahmed Eissa
+* website : www.ahmedessa.net
+* behance : https://www.behance.net/3essa
+*/
+
+
+/* Table of Content
+==================================================
+- Google fonts & font family -
+- General -
+- typography -
+- Preloader -
+- Header -
+- box intro section -
+- Portfoilo section -
+- Footer -
+- About page -
+- Services page -
+- contact page -
+- Portfolio single page -
+- Responsive media queries -
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400");
+@keyframes cssload-loader {
+	/* line 26, partials/_header.scss */
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	/* line 30, partials/_header.scss */
+	25% {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	/* line 34, partials/_header.scss */
+	50% {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	/* line 38, partials/_header.scss */
+	75% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+	/* line 42, partials/_header.scss */
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-ms-keyframes cssload-loader {
+	/* line 72, partials/_header.scss */
+	0% {
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	/* line 76, partials/_header.scss */
+	25% {
+		-ms-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	/* line 80, partials/_header.scss */
+	50% {
+		-ms-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	/* line 84, partials/_header.scss */
+	75% {
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+	/* line 88, partials/_header.scss */
+	100% {
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes cssload-loader {
+	/* line 95, partials/_header.scss */
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	/* line 99, partials/_header.scss */
+	25% {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	/* line 103, partials/_header.scss */
+	50% {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	/* line 107, partials/_header.scss */
+	75% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+	/* line 111, partials/_header.scss */
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes cssload-loader-inner {
+	/* line 141, partials/_header.scss */
+	0% {
+		height: 0%;
+	}
+	/* line 145, partials/_header.scss */
+	25% {
+		height: 0%;
+	}
+	/* line 149, partials/_header.scss */
+	50% {
+		height: 100%;
+	}
+	/* line 153, partials/_header.scss */
+	75% {
+		height: 100%;
+	}
+	/* line 157, partials/_header.scss */
+	100% {
+		height: 0%;
+	}
+}
+
+@-ms-keyframes cssload-loader-inner {
+	/* line 187, partials/_header.scss */
+	0% {
+		height: 0%;
+	}
+	/* line 191, partials/_header.scss */
+	25% {
+		height: 0%;
+	}
+	/* line 195, partials/_header.scss */
+	50% {
+		height: 100%;
+	}
+	/* line 199, partials/_header.scss */
+	75% {
+		height: 100%;
+	}
+	/* line 203, partials/_header.scss */
+	100% {
+		height: 0%;
+	}
+}
+
+@-webkit-keyframes cssload-loader-inner {
+	/* line 210, partials/_header.scss */
+	0% {
+		height: 0%;
+	}
+	/* line 214, partials/_header.scss */
+	25% {
+		height: 0%;
+	}
+	/* line 218, partials/_header.scss */
+	50% {
+		height: 100%;
+	}
+	/* line 222, partials/_header.scss */
+	75% {
+		height: 100%;
+	}
+	/* line 226, partials/_header.scss */
+	100% {
+		height: 0%;
+	}
+}
+
+
+/* header
+==================================================*/
+
+
+/* line 258, partials/_header.scss */
+
+.box-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 3;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	height: 80px;
+	background: transparent;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: background-color 0.3s;
+	transition: background-color 0.3s;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+
+/* line 276, partials/_header.scss */
+
+.box-header.is-fixed {
+	position: fixed;
+	top: -80px;
+	background-color: transparent;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transition: -webkit-transform 0.3s, -webkit-transform 0.3s;
+	transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+
+/* line 285, partials/_header.scss */
+
+.box-header.is-visible {
+	-webkit-transform: translate3d(0, 100%, 0);
+	transform: translate3d(0, 100%, 0);
+}
+
+
+/* line 292, partials/_header.scss */
+
+.box-logo {
+	display: block;
+	padding: 12px 20px 10px;
+}
+
+
+/* line 297, partials/_header.scss */
+
+.box-primary-nav-trigger {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 50px;
+	width: 100px;
+	padding-left: 1em;
+	background-color: transparent;
+	height: 30px;
+	line-height: 30px;
+	right: 10px;
+	top: 50%;
+	bottom: auto;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+
+/* line 303, partials/_header.scss */
+
+.box-primary-nav-trigger .box-menu-text {
+	color: white;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: none;
+	font-size: 2em;
+}
+
+
+/* line 310, partials/_header.scss */
+
+.box-primary-nav-trigger .box-menu-icon {
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	bottom: auto;
+	right: auto;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	width: 40px;
+	height: 6px;
+	background-color: #FFD89F;
+	-webkit-transition: background-color 0.3s;
+	transition: background-color 0.3s;
+	list-style: none;
+	-webkit-box-shadow: -4px -4px 0px 0px #175175;
+	box-shadow: -4px -4px 0px 0px #175175;
+}
+
+
+/* line 328, partials/_header.scss */
+
+.box-primary-nav-trigger .box-menu-icon::before,
+.box-primary-nav-trigger .box-menu-icon:after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #FFD89F;
+	right: 0;
+	-webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
+	-webkit-transition: top .3s, background-color 0s, -webkit-transform .3s;
+	transition: top .3s, background-color 0s, -webkit-transform .3s;
+	transition: transform .3s, top .3s, background-color 0s;
+	-webkit-transition: -webkit-transform .3s, top .3s, background-color 0s, -webkit-transform .3s;
+	transition: transform .3s, top .3s, background-color 0s, -webkit-transform .3s;
+	-webkit-box-shadow: -4px -4px 0px 0px #175175;
+	box-shadow: -4px -4px 0px 0px #175175;
+}
+
+
+/* line 344, partials/_header.scss */
+
+.box-primary-nav-trigger .box-menu-icon::before {
+	top: -15px;
+}
+
+
+/* line 347, partials/_header.scss */
+
+.box-primary-nav-trigger .box-menu-icon::after {
+	top: 15px;
+}
+
+
+/* line 350, partials/_header.scss */
+
+.box-primary-nav-trigger .box-menu-icon.is-clicked {
+	background-color: transparent;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+
+/* line 353, partials/_header.scss */
+
+.box-primary-nav-trigger .box-menu-icon.is-clicked::before,
+.box-primary-nav-trigger .box-menu-icon.is-clicked::after {
+	background-color: 393939;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+
+/* line 357, partials/_header.scss */
+
+.box-primary-nav-trigger .box-menu-icon.is-clicked::before {
+	top: 0;
+	-webkit-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+
+
+/* line 362, partials/_header.scss */
+
+.box-primary-nav-trigger .box-menu-icon.is-clicked::after {
+	top: 0;
+	-webkit-transform: rotate(225deg);
+	-ms-transform: rotate(225deg);
+	transform: rotate(225deg);
+}
+
+
+/* line 379, partials/_header.scss */
+
+.box-primary-nav-trigger .box-menu-text {
+	display: inline-block;
+}
+
+
+/* line 382, partials/_header.scss */
+
+.box-primary-nav-trigger .box-menu-icon {
+	left: auto;
+	right: 1em;
+	-webkit-transform: translateX(0) translateY(-50%);
+	-ms-transform: translateX(0) translateY(-50%);
+	transform: translateX(0) translateY(-50%);
+}
+
+
+/* line 390, partials/_header.scss */
+
+.box-primary-nav {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.65);
+	z-index: 2;
+	text-align: center;
+	padding: 50px 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	-webkit-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	transform: translateY(-100%);
+	-webkit-transition-property: -webkit-transform;
+	transition-property: -webkit-transform;
+	transition-property: transform;
+	-webkit-transition-property: -webkit-transform, -webkit-transform;
+	transition-property: transform, -webkit-transform;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	list-style: none;
+}
+
+
+/* line 413, partials/_header.scss */
+
+.box-primary-nav li {
+	font-size: 3em;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin: .2em 0;
+	text-transform: uppercase;
+}
+
+
+/* line 421, partials/_header.scss */
+
+.box-primary-nav a {
+	display: inline-block;
+	padding: .4em 1em;
+	border-radius: 0.25em;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+/* line 430, partials/_header.scss */
+
+.box-primary-nav a:focus {
+	outline: none;
+}
+
+
+/* line 436, partials/_header.scss */
+
+.no-touch .box-primary-nav a:hover {
+	text-decoration: none;
+	color: #ddd;
+}
+
+
+/* line 441, partials/_header.scss */
+
+.box-primary-nav {
+	padding: 150px 0 0;
+}
+
+
+/* line 442, partials/_header.scss */
+
+.box-primary-nav .box-label {
+	color: #17739b;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 17px;
+	margin: 2.4em 0 .8em;
+}
+
+
+/* line 449, partials/_header.scss */
+
+.box-primary-nav .box-social {
+	display: inline-block;
+	margin: 10px .4em;
+}
+
+
+/* line 452, partials/_header.scss */
+
+.box-primary-nav .box-social a {
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	font-size: 30px;
+}
+
+
+/* line 459, partials/_header.scss */
+
+.box-primary-nav.is-visible {
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+}
+
+
+/* line 464, partials/_header.scss */
+
+.box-primary-nav li {
+	font-size: 28px;
+}
+
+
+/* line 469, partials/_header.scss */
+
+.actif {
+	color: rgba(255, 255, 255, 0.5) !important;
+}
+
+
+/* Google fonts & font family
+==================================================*/
+
+
+/* General
+==================================================*/
+
+
+/* line 10, mainscss.scss */
+
+body {
+	padding: 70px auto;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	font-family: 'Roboto', sans-serif;
+	color: #e6e6e6;
+}
+
+
+/* line 15, mainscss.scss */
+
+html,
+body {
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	background: #00bfe6;
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, #00bfe6), color-stop(30%, #00bfe6), color-stop(100%, #00345c));
+	background: -webkit-linear-gradient(top, #00bfe6 0%, #00bfe6 30%, #00345c 100%);
+	background: -webkit-gradient(linear, left top, left bottom, from(#00bfe6), color-stop(30%, #00bfe6), to(#00345c));
+	background: linear-gradient(to bottom, #00bfe6 0%, #00bfe6 30%, #00345c 100%);
+	overflow: hidden;
+}
+
+
+/* line 29, mainscss.scss */
+
+.no-padding {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+/* line 32, mainscss.scss */
+
+.no-padding [class^="col-"] {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+/* line 40, mainscss.scss */
+
+a {
+	-webkit-transition: all .3s;
+	transition: all 0.3s;
+}
+
+
+/* line 47, mainscss.scss */
+
+.container-fluid {
+	padding: 0px;
+}
+
+
+/*
+* Box Theme
+* Created by : Ahmed Eissa
+* website : www.ahmedessa.net
+* behance : https://www.behance.net/3essa
+*/
+
+
+/* Table of Content
+==================================================
+- Google fonts & font family -
+- General -
+- typography -
+- Preloader -
+- Header -
+- box intro section -
+- Portfoilo section -
+- Footer -
+- About page -
+- Services page -
+- contact page -
+- Portfolio single page -
+- Responsive media queries -
+*/
+
+@keyframes cssload-loader {
+	/* line 77, mainscss.scss */
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	/* line 81, mainscss.scss */
+	25% {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	/* line 85, mainscss.scss */
+	50% {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	/* line 89, mainscss.scss */
+	75% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+	/* line 93, mainscss.scss */
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-ms-keyframes cssload-loader {
+	/* line 123, mainscss.scss */
+	0% {
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	/* line 127, mainscss.scss */
+	25% {
+		-ms-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	/* line 131, mainscss.scss */
+	50% {
+		-ms-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	/* line 135, mainscss.scss */
+	75% {
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+	/* line 139, mainscss.scss */
+	100% {
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes cssload-loader {
+	/* line 146, mainscss.scss */
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	/* line 150, mainscss.scss */
+	25% {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	/* line 154, mainscss.scss */
+	50% {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	/* line 158, mainscss.scss */
+	75% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+	/* line 162, mainscss.scss */
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes cssload-loader-inner {
+	/* line 192, mainscss.scss */
+	0% {
+		height: 0%;
+	}
+	/* line 196, mainscss.scss */
+	25% {
+		height: 0%;
+	}
+	/* line 200, mainscss.scss */
+	50% {
+		height: 100%;
+	}
+	/* line 204, mainscss.scss */
+	75% {
+		height: 100%;
+	}
+	/* line 208, mainscss.scss */
+	100% {
+		height: 0%;
+	}
+}
+
+@-ms-keyframes cssload-loader-inner {
+	/* line 238, mainscss.scss */
+	0% {
+		height: 0%;
+	}
+	/* line 242, mainscss.scss */
+	25% {
+		height: 0%;
+	}
+	/* line 246, mainscss.scss */
+	50% {
+		height: 100%;
+	}
+	/* line 250, mainscss.scss */
+	75% {
+		height: 100%;
+	}
+	/* line 254, mainscss.scss */
+	100% {
+		height: 0%;
+	}
+}
+
+@-webkit-keyframes cssload-loader-inner {
+	/* line 261, mainscss.scss */
+	0% {
+		height: 0%;
+	}
+	/* line 265, mainscss.scss */
+	25% {
+		height: 0%;
+	}
+	/* line 269, mainscss.scss */
+	50% {
+		height: 100%;
+	}
+	/* line 273, mainscss.scss */
+	75% {
+		height: 100%;
+	}
+	/* line 277, mainscss.scss */
+	100% {
+		height: 0%;
+	}
+}
+
+
+/* header
+==================================================*/
+
+
+/* line 311, mainscss.scss */
+
+.box-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 3;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	height: 80px;
+	background: transparent;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: background-color 0.3s;
+	transition: background-color 0.3s;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+
+/* line 329, mainscss.scss */
+
+.box-header.is-fixed {
+	position: fixed;
+	top: -80px;
+	background-color: transparent;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transition: -webkit-transform 0.3s, -webkit-transform 0.3s;
+	transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+
+/* line 338, mainscss.scss */
+
+.box-header.is-visible {
+	-webkit-transform: translate3d(0, 100%, 0);
+	transform: translate3d(0, 100%, 0);
+}
+
+
+/* line 345, mainscss.scss */
+
+.box-logo {
+	display: block;
+	padding: 12px 20px 10px;
+}
+
+
+/* line 350, mainscss.scss */
+
+.box-primary-nav-trigger {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 50px;
+	width: 100px;
+	padding-left: 1em;
+	background-color: transparent;
+	height: 30px;
+	line-height: 30px;
+	right: 10px;
+	top: 50%;
+	bottom: auto;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+
+/* line 356, mainscss.scss */
+
+.box-primary-nav-trigger .box-menu-text {
+	color: white;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: none;
+	font-size: 2em;
+}
+
+
+/* line 363, mainscss.scss */
+
+.box-primary-nav-trigger .box-menu-icon {
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	bottom: auto;
+	right: auto;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	width: 40px;
+	height: 6px;
+	background-color: #FFD89F;
+	-webkit-transition: background-color 0.3s;
+	transition: background-color 0.3s;
+	list-style: none;
+	-webkit-box-shadow: -4px -4px 0px 0px #175175;
+	box-shadow: -4px -4px 0px 0px #175175;
+}
+
+
+/* line 381, mainscss.scss */
+
+.box-primary-nav-trigger .box-menu-icon::before,
+.box-primary-nav-trigger .box-menu-icon:after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #FFD89F;
+	right: 0;
+	-webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
+	-webkit-transition: top .3s, background-color 0s, -webkit-transform .3s;
+	transition: top .3s, background-color 0s, -webkit-transform .3s;
+	transition: transform .3s, top .3s, background-color 0s;
+	-webkit-transition: -webkit-transform .3s, top .3s, background-color 0s, -webkit-transform .3s;
+	transition: transform .3s, top .3s, background-color 0s, -webkit-transform .3s;
+	-webkit-box-shadow: -4px -4px 0px 0px #175175;
+	box-shadow: -4px -4px 0px 0px #175175;
+}
+
+
+/* line 397, mainscss.scss */
+
+.box-primary-nav-trigger .box-menu-icon::before {
+	top: -15px;
+}
+
+
+/* line 400, mainscss.scss */
+
+.box-primary-nav-trigger .box-menu-icon::after {
+	top: 15px;
+}
+
+
+/* line 403, mainscss.scss */
+
+.box-primary-nav-trigger .box-menu-icon.is-clicked {
+	background-color: transparent;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+
+/* line 406, mainscss.scss */
+
+.box-primary-nav-trigger .box-menu-icon.is-clicked::before,
+.box-primary-nav-trigger .box-menu-icon.is-clicked::after {
+	background-color: 393939;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+
+/* line 410, mainscss.scss */
+
+.box-primary-nav-trigger .box-menu-icon.is-clicked::before {
+	top: 0;
+	-webkit-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+
+
+/* line 415, mainscss.scss */
+
+.box-primary-nav-trigger .box-menu-icon.is-clicked::after {
+	top: 0;
+	-webkit-transform: rotate(225deg);
+	-ms-transform: rotate(225deg);
+	transform: rotate(225deg);
+}
+
+
+/* line 432, mainscss.scss */
+
+.box-primary-nav-trigger .box-menu-text {
+	display: inline-block;
+}
+
+
+/* line 435, mainscss.scss */
+
+.box-primary-nav-trigger .box-menu-icon {
+	left: auto;
+	right: 1em;
+	-webkit-transform: translateX(0) translateY(-50%);
+	-ms-transform: translateX(0) translateY(-50%);
+	transform: translateX(0) translateY(-50%);
+}
+
+
+/* line 443, mainscss.scss */
+
+.box-primary-nav {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.65);
+	z-index: 2;
+	text-align: center;
+	padding: 50px 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	-webkit-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	transform: translateY(-100%);
+	-webkit-transition-property: -webkit-transform;
+	transition-property: -webkit-transform;
+	transition-property: transform;
+	-webkit-transition-property: -webkit-transform, -webkit-transform;
+	transition-property: transform, -webkit-transform;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	list-style: none;
+}
+
+
+/* line 466, mainscss.scss */
+
+.box-primary-nav li {
+	font-size: 3em;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin: .2em 0;
+	text-transform: uppercase;
+}
+
+
+/* line 474, mainscss.scss */
+
+.box-primary-nav a {
+	display: inline-block;
+	padding: .4em 1em;
+	border-radius: 0.25em;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+/* line 483, mainscss.scss */
+
+.box-primary-nav a:focus {
+	outline: none;
+}
+
+
+/* line 489, mainscss.scss */
+
+.no-touch .box-primary-nav a:hover {
+	text-decoration: none;
+	color: #ddd;
+}
+
+
+/* line 494, mainscss.scss */
+
+.box-primary-nav {
+	padding: 150px 0 0;
+}
+
+
+/* line 495, mainscss.scss */
+
+.box-primary-nav .box-label {
+	color: #17739b;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 17px;
+	margin: 2.4em 0 .8em;
+}
+
+
+/* line 502, mainscss.scss */
+
+.box-primary-nav .box-social {
+	display: inline-block;
+	margin: 10px .4em;
+}
+
+
+/* line 505, mainscss.scss */
+
+.box-primary-nav .box-social a {
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	font-size: 30px;
+}
+
+
+/* line 512, mainscss.scss */
+
+.box-primary-nav.is-visible {
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+}
+
+
+/* line 517, mainscss.scss */
+
+.box-primary-nav li {
+	font-size: 28px;
+}
+
+
+/* line 522, mainscss.scss */
+
+.actif {
+	color: rgba(255, 255, 255, 0.5) !important;
+}
+
+
+/* etape2
+    ==================================================*/
+
+
+/* line 532, mainscss.scss */
+
+#data-figure {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
+/* line 541, mainscss.scss */
+
+#data-figure figure.svgbulle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: -webkit-calc(100%);
+	width: calc(100%);
+	height: 100px;
+}
+
+
+/* line 549, mainscss.scss */
+
+#data-figure .bulle-details {
+	position: absolute;
+	/*  top: 0;*/
+	/*  left: 25%;*/
+	bottom: 25%;
+	margin-top: -50%;
+	padding: 0 10%;
+	/*
+  color: black;
+  font-size: 40px;
+*/
+}
+
+.bulle-details h3{
+	font-weight: bold;
+	font-size: 3em;
+		color: #ffd89f;
+}
+
+
+/* line 559, mainscss.scss */
+
+#data-figure .main_footer {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 60px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	background-color: purple;
+}
+
+
+/* line 569, mainscss.scss */
+
+#data-figure .main_footer .btn {
+	width: 100%;
+	background-color: green !important;
+}
+
+
+/* line 575, mainscss.scss */
+
+.main_footer button i.fa {
+	text-align: right;
+	color: #00c3e8;
+	font-size: 2em;
+}
+
+
+
+.main_footer button {
+	height: 60px;
+	background-color: #063153;
+	border: none;
+}
+
+/* line 579, mainscss.scss */
+
+.main_footer button, .main_footer button.active, .main_footer button:focus, .main_footer button.active:hover, .main_footer button:hover, .main_footer button:active, .main_footer button.inactive:active {
+	color: #ffd89f;
+	background-color: #063153;
+	border: none;
+}
+
+.main_footer button.active i{
+	color: #ffd89f;
+}
+
+
+/* line 583, mainscss.scss */
+
+#data-figure .main_footer button.inactive {
+/*	color: #555;*/
+	border: none;
+}
+
+
+/* Responsive media queries
+    ==================================================*/
+
+@media (max-width: 991px) {
+	/* line 595, mainscss.scss */
+	.col-md-6 h3 {
+		margin-top: 30px;
+	}
+}
+
+@media only screen and (max-width: 670px) {
+	/* line 601, mainscss.scss */
+	.box-headline {
+		font-size: 100px;
+	}
+	/* line 604, mainscss.scss */
+	.box-intro h5 {
+		font-size: 12px;
+	}
+	/* line 607, mainscss.scss */
+	.box-primary-nav {
+		padding: 80px 0 0;
+	}
+	/* line 608, mainscss.scss */
+	.box-primary-nav a {
+		padding: 5px 1em;
+		font-size: 0.8em;
+	}
+	/* line 613, mainscss.scss */
+	.box-primary-nav .box-social a {
+		font-size: 23px;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	/* line 620, mainscss.scss */
+	.box-headline {
+		font-size: 80px;
+	}
+	/* line 623, mainscss.scss */
+	.box-intro h5 {
+		font-size: 12px;
+	}
+	/* line 626, mainscss.scss */
+	.main-container {
+		padding: 50px 0;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	/* line 632, mainscss.scss */
+	.box-headline {
+		font-size: 50px;
+	}
+	/* line 635, mainscss.scss */
+	.box-intro h5 {
+		font-size: 12px;
+	}
+}
